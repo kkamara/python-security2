@@ -282,3 +282,4 @@ django_app/media/
 client/node_modules
 db.sqlite3
 migrations/
+nohup.out

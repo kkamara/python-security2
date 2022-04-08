@@ -62,7 +62,9 @@ THIRD_PARTY_APPS = [
     'django_extensions',
 ]
 
-LOCAL_APPS = []
+LOCAL_APPS = [
+  'django-cors-headers',
+]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
@@ -74,6 +76,12 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.common.CommonMiddleware",
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://127.0.0.1:3000",
 ]
 
 ROOT_URLCONF = 'app.urls'

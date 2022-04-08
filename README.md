@@ -20,7 +20,13 @@ The app runs at `http://localhost` and `http://localhost:80`.
 
 ```bash
   python3 manage.py shell -i ipython
+```## API
+
+```bash
+python manage.py show_urls
 ```
+
+View the api collection [here](https://documenter.getpostman.com/view/17125932/UVyxQYrt).
 
 ## Admin
 

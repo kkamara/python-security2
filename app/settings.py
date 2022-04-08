@@ -23,6 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 environ.Env.read_env(os.path.join(BASE_DIR / '.env'))
 APP_ENV = env('APP_ENV')
+
 if 'production' != APP_ENV:
   environ.Env.read_env(os.path.join(
     BASE_DIR, 
@@ -74,6 +75,7 @@ MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -228,3 +230,7 @@ DATABASES = {
         'PORT': env('MARIADB_PORT'),
     }
 }
+
+if 'production' == APP_ENV:
+  import django_on_heroku
+  django_on_heroku.settings(locals())

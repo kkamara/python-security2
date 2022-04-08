@@ -4,7 +4,7 @@ import Routes from "./Routes"
 
 function App() {
   return (
-   <BrowserRouter basename={'/react-boilerplate/'}>
+   <BrowserRouter>
       <div className="App">
         <Routes/>
       </div>

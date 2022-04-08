@@ -6,6 +6,8 @@ set -o nounset
 
 export DJANGO_SUPERUSER_PASSWORD=secret
 
+rm -rf static 2>/dev/null || true
+python manage.py collectstatic --no-input
 python manage.py makemigrations
 python manage.py migrate --fake-initial
 python manage.py createsuperuser \

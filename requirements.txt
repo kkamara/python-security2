@@ -1,0 +1,22 @@
+PyMySQL==1.0.2 # https://stdworkflow.com/1469/python-mysql-problem-nameerror-name-mysql-is-not-defined
+mysqlclient==2.1.0
+certifi==2021.10.8
+chardet==4.0.0
+defusedxml==0.7.1
+Django==4.0.3
+django-extensions==3.1.5
+django-environ==0.8.1
+django-allauth==0.50.0
+django-cors-headers==3.11.0
+django-rest-auth==0.9.5
+djangorestframework==3.13.1
+gunicorn==20.1.0
+idna==3.3
+oauthlib==3.2.0
+python3-openid==3.2.0
+pytz==2022.1
+requests==2.27.1
+requests-oauthlib==1.3.1
+six==1.16.0
+urllib3==1.26.9
+whitenoise==6.0.0

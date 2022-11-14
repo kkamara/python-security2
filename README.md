@@ -53,6 +53,16 @@ Mail environment credentials are at [.env](https://raw.githubusercontent.com/kka
 
 The [mailhog](https://github.com/mailhog/MailHog) docker image runs at `http://localhost:8025`.
 
+## Misc
+
+[See django app.](https://github.com/kkamara/django-app)
+
+[See python amazon scraper 2.](https://github.com/kkamara/selenium-py)
+
+[See python docker skeleton.](https://github.com/kkamara/python-docker-skeleton)
+
+[See python for finance.](https://github.com/kkamara/python-for-finance)
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 

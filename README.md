@@ -2,6 +2,22 @@
 
 With docker support.
 
+* [Setup](#setup)
+
+* [iPython Django Shell](#ipython-django-shell)
+
+* [API](#api)
+
+* [Admin](#admin)
+
+* [Mail server](#mail-server)
+
+* [Misc](#misc)
+
+* [Contributing](#contributing)
+
+* [License](#license)
+
 ## Setup
 
 ```bash

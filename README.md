@@ -1,4 +1,4 @@
-# django-react-boilerplate
+# web-react-boilerplate
 
 With docker support.
 

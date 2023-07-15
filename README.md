@@ -56,9 +56,7 @@ export DJANGO_SUPERUSER_PASSWORD=secret
 python manage.py createsuperuser \
   --username admin_user \
   --email admin@django-app.com \
-  --no-input \
-  --first_name Admin \
-  --last_name User
+  --no-input
 ```
 
 ## Mail Server

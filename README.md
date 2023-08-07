@@ -2,7 +2,11 @@
 
 With docker support.
 
-* [Setup](#setup)
+* [Installation](#installation)
+
+* [Usage](#usage)
+
+* [Using docker](#using-docker)
 
 * [iPython Django Shell](#ipython-django-shell)
 
@@ -18,19 +22,31 @@ With docker support.
 
 * [License](#license)
 
-## Setup
+## Installation
 
 ```bash
 cp .env.example .env
 pip3 install virtualenv && \
   virtualenv env && \
   source env/bin/activate
+```
+
+## Usage
+
+```bash
+# alias py3="python3"
+py3 manage.py runserver 3000
+# http://localhost:3000
+```
+
+## Using docker?
+
+```bash
 alias compose='docker-compose -f local.yml'
 compose build
 compose up
+# http://localhost:80 and http://localhost
 ```
-
-The app runs at `http://localhost` and `http://localhost:80`.
 
 ## iPython Django Shell
 

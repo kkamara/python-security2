@@ -14,7 +14,7 @@ With docker support.
 
 * [Admin](#admin)
 
-* [Cache frontend view templates](#cache-frontend-view-templates)
+* [Cache react app & view templates](#cache-templates)
 
 * [Mail server](#mail-server)
 
@@ -77,7 +77,7 @@ py3 manage.py createsuperuser \
   --no-input
 ```
 
-## Cache frontend view templates
+## Cache react app & view templates <a name="cache-templates"></a>
 
 ```bash
 py3 manage.py collectstatic

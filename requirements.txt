@@ -25,12 +25,10 @@ itypes==1.2.0
 Jinja2==3.1.1
 Markdown==3.3.6
 MarkupSafe==2.1.1
-mysqlclient==2.1.0
+pymysql==1.1.0
 oauthlib==3.2.0
-psycopg2-binary==2.9.3
 pycparser==2.21
 PyJWT==1.7.1
-PyMySQL==1.0.2
 python3-openid==3.2.0
 pytz==2022.1
 requests==2.27.1

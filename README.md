@@ -14,6 +14,8 @@ With docker support.
 
 * [Admin](#admin)
 
+* [Cache frontend view templates](#cache-frontend-view-templates)
+
 * [Mail server](#mail-server)
 
 * [Misc](#misc)
@@ -51,13 +53,13 @@ compose up
 ## iPython Django Shell
 
 ```bash
-  python3 manage.py shell -i ipython
+  py3 manage.py shell -i ipython
 ```
 
 ## API
 
 ```bash
-  python manage.py show_urls
+  py3 manage.py show_urls
 ```
 
 View the api collection [here](https://documenter.getpostman.com/view/17125932/UVyxQYrt).
@@ -69,10 +71,16 @@ Admin creds are set in [./compose/local/django/start](https://raw.githubusercont
 ```bash
 export DJANGO_SUPERUSER_PASSWORD=secret
 
-python manage.py createsuperuser \
+py3 manage.py createsuperuser \
   --username admin_user \
   --email admin@django-app.com \
   --no-input
+```
+
+## Cache frontend view templates
+
+```bash
+py3 manage.py collectstatic
 ```
 
 ## Mail Server

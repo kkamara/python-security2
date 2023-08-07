@@ -231,6 +231,3 @@ DATABASES = {
     }
 }
 
-if 'production' == APP_ENV:
-  import django_on_heroku
-  django_on_heroku.settings(locals())

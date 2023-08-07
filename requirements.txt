@@ -12,7 +12,6 @@ django-cors-headers==3.11.0
 django-environ==0.8.1
 django-extensions==3.1.5
 django-filter==21.1
-django-on-heroku==1.1.2
 django-templated-mail==1.1.1
 djangorestframework==3.13.1
 djangorestframework-jwt==1.11.0

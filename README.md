@@ -47,7 +47,7 @@ py3 manage.py runserver 3000
 alias compose='docker-compose -f local.yml'
 compose build
 compose up
-# http://localhost:80 and http://localhost
+# http://localhost:3000
 ```
 
 ## iPython Django Shell

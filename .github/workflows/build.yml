@@ -8,12 +8,35 @@ on:
 
 jobs:
   build:
-
+    name: Tests Pipeline (Python ${{ matrix.python-version }})
     runs-on: ubuntu-latest
+
     strategy:
       max-parallel: 4
       matrix:
         python-version: [3.11]
+    
+    services:
+      mysql:
+        image: mysql:5.7
+        env:
+          MYSQL_ROOT_PASSWORD: ''
+          MYSQL_DATABASE: 'boilerplate'
+          MYSQL_USER: 'user'
+          MYSQL_PASSWORD: 'secret'
+        ports:
+          - 3306/tcp
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
+      
+      redis:
+        image: redis
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 6379:6379
 
     steps:
     - uses: actions/checkout@v3

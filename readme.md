@@ -93,11 +93,13 @@ The [mailhog](https://github.com/mailhog/MailHog) docker image runs at `http://l
 
 ## Misc
 
-[See django app.](https://github.com/kkamara/django-app)
+[See your Python code do web browsing on your screen with GUI.](https://github.com/kkamara/python-selenium)
 
-[See python amazon scraper 2.](https://github.com/kkamara/selenium-py)
+[See python react boilerplate app.](https://github.com/kkamara/python-react-boilerplate)
 
 [See python docker skeleton.](https://github.com/kkamara/python-docker-skeleton)
+
+[See python desktop mobile.](https://github.com/kkamara/python-desktop-mobile)
 
 [See python for finance.](https://github.com/kkamara/python-for-finance)
 

@@ -1,4 +1,4 @@
-name: Tests Pipeline
+name: Security Pipeline
 
 on:
   push:
@@ -6,9 +6,12 @@ on:
   pull_request:
     branches: [ "main" ]
 
+env:
+  args: "--subject='test'"
+
 jobs:
   build:
-    name: Tests Pipeline (Python ${{ matrix.python-version }})
+    name: Security Pipeline (Python ${{ matrix.python-version }})
     runs-on: ubuntu-latest
 
     strategy:
@@ -50,6 +53,6 @@ jobs:
         pip install -r requirements.txt
     - name: Create environment file
       run: cp .env.testing .env
-    - name: Run Tests
+    - name: Run Security
       run: |
-        python manage.py test
+        python manage.py crypt ${{ env.args }}

@@ -1,12 +1,16 @@
-# python-react-boilerplate
+<img src="https://github.com/kkamara/useful/raw/main/selenium-py.png" alt="selenium-py.png" />
 
-With docker support.
+# python-security
+
+💻 (12-Aug-2023) Python Security with Cryptography module and Fernet Symmetric encryption.
 
 * [Installation](#installation)
 
 * [Usage](#usage)
 
-* [Using docker](#using-docker)
+* [Run Web Server](#run-web-server)
+
+* [Using Docker](#using-docker)
 
 * [iPython Django Shell](#ipython-django-shell)
 
@@ -37,11 +41,18 @@ pip3 install virtualenv && \
 
 ```bash
 # alias py3="python3"
+# Run encryption
+py3 manage.py crypt --subject='test'
+```
+
+##### Run Web Server
+
+```bash
 py3 manage.py runserver 3000
 # http://localhost:3000
 ```
 
-## Using docker?
+## Using Docker?
 
 ```bash
 alias compose='docker-compose -f local.yml'

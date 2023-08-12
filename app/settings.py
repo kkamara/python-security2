@@ -66,6 +66,7 @@ THIRD_PARTY_APPS = [
 ]
 
 LOCAL_APPS = [
+  'security',
   'corsheaders',
 ]
 

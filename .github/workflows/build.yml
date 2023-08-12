@@ -8,6 +8,7 @@ on:
 
 env:
   args: "--subject='test'"
+  args2: "--subject_key='test' --subject_val='secret'"
 
 jobs:
   build:
@@ -56,3 +57,6 @@ jobs:
     - name: Run Security
       run: |
         python manage.py crypt ${{ env.args }}
+    - name: Run Security 2
+      run: |
+        python manage.py crypt2 ${{ env.args2 }}

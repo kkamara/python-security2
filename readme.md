@@ -1,8 +1,8 @@
 <img src="https://github.com/kkamara/useful/raw/main/selenium-py.png" alt="selenium-py.png" />
 
-# python-security
+# python-security2
 
-💻 (12-Aug-2023) Python Security with Cryptography module and Fernet Symmetric encryption.
+💻 (12-Aug-2023) Python Security 2 with Cryptography module and Fernet Symmetric encryption and Django Signing.
 
 * [Installation](#installation)
 
@@ -43,9 +43,11 @@ pip3 install virtualenv && \
 # alias py3="python3"
 # Run encryption
 py3 manage.py crypt --subject='test'
+
+py3 manage.py crypt2 --subject_key='test' --subject_val='secret'
 ```
 
-Make changes to [crypt.py](https://github.com/kkamara/python-security/blob/main/security/management/commands/crypt.py) to update the crypt command.
+Make changes to [crypt.py](https://github.com/kkamara/python-security2/blob/main/security/management/commands/crypt.py) to update the crypt command.
 
 #### Run Web Server
 

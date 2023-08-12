@@ -45,7 +45,9 @@ pip3 install virtualenv && \
 py3 manage.py crypt --subject='test'
 ```
 
-##### Run Web Server
+Make changes to [crypt.py](https://github.com/kkamara/python-security/blob/main/security/management/commands/crypt.py) to update the crypt command.
+
+#### Run Web Server
 
 ```bash
 py3 manage.py runserver 3000
